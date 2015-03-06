@@ -1,0 +1,9 @@
+Step 1: updated composer with twig
+Step 2: added "view" and "src" folders.
+Step 3:
+
+
+
+User -> Home = buy or sell?
+                    -> buy form = Enter price and miles
+                    -> sell form = Enter make_model, price, and miles

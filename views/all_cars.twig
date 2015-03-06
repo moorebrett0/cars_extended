@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>Welcome to Brett and Bryan's List</title>
+</head>
+<body>
+    <div class='container'>
+        <div class='jumbotron'>
+            <h1>Brett and Bryan's List!</h1>
+        </div>
+
+
+        {% if all_cars is not empty %}
+        <ul>
+            {% for newcar in all_cars %}
+            <li> {{ newcar.getMakeModel }}</li>
+            <li> {{ newcar.getPrice }} </li>
+            <li> {{ newcar.getMiles }} </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        <p><a href='/'>Home</a></p>
+    </div>
+</body>
+
+</html>
